@@ -1,0 +1,9 @@
+name: hold-and-release
+on:
+  workflow_dispatch:
+jobs:
+  hold:
+    runs-on: ubuntu-latest
+    steps:
+      - name: park
+        run: sleep 300
